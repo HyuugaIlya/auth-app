@@ -1,0 +1,107 @@
+.btn {
+    &-submit {
+        & button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 220px;
+            height: 60px;
+            background: #5222a0;
+            border-radius: 50px;
+            color: #fff;
+            font-size: 19px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s ease;
+    
+            &:hover {
+                background: #652dc0;
+                transform: translateY(-2px);
+                width: 480px;
+            }
+    
+            &:active {
+                background: #462183;
+                transform: translateY(2px);
+                color: rgba(255, 255, 255, 0.95);
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            width: 100%;
+
+            & button {
+                width: 100%;
+            }
+        }
+    }
+
+    &-back {
+        position: relative;
+        top: 44px;
+        left: 12%;
+        color: #5222a0;
+        width: 70px;
+
+        font-size: 19px;
+
+        a {
+            transition: 0.3s ease;
+
+            &:hover {
+                color: #5222a0d0;
+            }
+
+            &:active {
+                color: #7538d6e3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            top: 34px;
+        }
+
+        @media (max-width: 374px) {
+            position: static;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+
+            a {
+                padding-right: 10px;
+            }
+        }
+    }
+
+    &-logout {
+        padding-top: 10px;
+        
+        & button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 220px;
+            height: 60px;
+            background: #5222a0;
+            border-radius: 50px;
+            color: #fff;
+            font-size: 19px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s ease;
+    
+            &:hover {
+                background: #652dc0;
+                transform: translateY(-2px);
+            }
+    
+            &:active {
+                background: #462183;
+                transform: translateY(2px);
+                color: rgba(255, 255, 255, 0.95);
+            }
+        }
+
+    }
+}
